@@ -23,14 +23,6 @@ var blogSchema = new mongoose.Schema({
 
 var Blog = mongoose.model("blog", blogSchema);
 
-/* Blog.create(
-    {
-        title: "John Mayer sucks ass",
-        image: "https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
-        body: "John Mayer sucks big mongo dick"
-    }
-);*/
-
 app.get("/", function (req, res) {
     res.redirect("/posts");
 })
